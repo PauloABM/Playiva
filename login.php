@@ -47,7 +47,7 @@
                     <div class="field">
                         <div class="control">
                             <!--<a href="login.php" class="button">Login</a>-->
-                            <a class="button">Cadastro</a>
+                            <a class="button" href="cadastro.php">Cadastro</a>
                         </div>
                     </div>
                 </div>
