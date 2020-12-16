@@ -1,8 +1,10 @@
 <?php
 require_once './db.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Playiva/class/AutoLoader.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/class/AutoLoader.class.php';
+
 
 R::setup(DB_STRING, DB_USER, DB_PASSWORD);
+
 
 /* DROP TABLES */
 R::exec("drop table if exists instrument_lecture");

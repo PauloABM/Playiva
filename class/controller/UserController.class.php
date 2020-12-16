@@ -1,6 +1,6 @@
 <?php
 require_once './db.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Playiva/class/AutoLoader.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/class/AutoLoader.class.php';
 
 if (isset($_GET['id'])) {
     $id = filter_input(INPUT_GET, 'id');

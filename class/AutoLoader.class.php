@@ -13,9 +13,9 @@ class Autoloader {
 
         if (substr($classe, 0, strlen('Model')) === 'Model') {
             // Importação de modelos do RedBeanPHP
-            $diretorio = '/Playiva/class/model/';
+            $diretorio = '/class/model/';
         } else {
-            $diretorio = '/Playiva/class/';
+            $diretorio = '/class/';
         }
 
         $arquivo = $_SERVER['DOCUMENT_ROOT']
@@ -38,7 +38,6 @@ class Autoloader {
 
     public static function importar($arquivo, $subdiretorio) {
         require_once $_SERVER['DOCUMENT_ROOT']
-                . '/Playiva'
                 . ($subdiretorio ? "/$subdiretorio/" : '/')
                 . $arquivo;
     }
