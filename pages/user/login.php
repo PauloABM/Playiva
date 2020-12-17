@@ -11,25 +11,32 @@ $title = 'Playiva';
 R::setup(DB_STRING, DB_USER, DB_PASSWORD);
 
 function login(string $email, string $passwordHash){
+    session_start();
     $failed = [
         'status' => false,
-        'message' => 'Email ou senha incorretos'
+        'message' => 'Email ou senha incorretos',
+        
     ];
 
     $user = R::find('user', 'email = :email', [ 'email' => $email ]);
     if (count($user) != 1) {
+        unset ($_SESSION['email']);
+        unset ($_SESSION['passwordHash']);
         return $failed;
     }
     $user = array_values($user)[0];
     if (!password_verify($passwordHash, $user->passwordHash)) {
+        unset ($_SESSION['email']);
+        unset ($_SESSION['passwordHash']);
         return $failed;
     }
     return [
         'status' => true,
         //'message' => 'Login successful!'
+        $_SESSION['email'] = $email,
+        $_SESSION['passwordHash'] = $passwordHash,
         header("Location: /pages/main/main.php"), 
         exit()
-
     ];
 
 
