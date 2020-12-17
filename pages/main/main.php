@@ -7,6 +7,7 @@ $css = file_exists(realpath(__DIR__) . '/' . $prefix . '.styles.css') ? realpath
 $js = file_exists(realpath(__DIR__) . '/' . $prefix . '.script.js') ? realpath(__DIR__) . '\\' . $prefix . '.script.js' : false;
 
 $title = 'Playiva - Learn and Improve';
+
 ///* para só acessar page logado --comentar caso precisem
 session_start();
 if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['passwordHash']) == true)){
@@ -18,9 +19,11 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['passwordHash'])
 $logado = $_SESSION['email'];
 var_dump($logado);
 //*/
+
 R::setup(DB_STRING, DB_USER, DB_PASSWORD);
 $languages = R::findAll('language');
 $channels = R::findAll('channel');
 $instruments = R::findAll('instrument');
 $techniques = R::findAll('technique');
+$lectures = R::findAll('lecture');
 include '../template/template.php';

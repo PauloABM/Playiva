@@ -103,7 +103,7 @@ R::store($channel3);
 /* LECTURES */
 // lecture 1
 $lecture1 = R::dispense('lecture');
-$lecture1->url = 'https://www.youtube.com/watch?v=DgNRDocUEkw';
+$lecture1->url = 'https://www.youtube.com/embed/DgNRDocUEkw';
 $lecture1->name = 'STAND BY ME - Oasis (aula completa) | Como tocar no violão';
 $lecture1->language = $language2;
 $lecture1->channel = $channel1;
@@ -111,7 +111,7 @@ R::store($lecture1);
 
 // lecture 2
 $lecture2 = R::dispense('lecture');
-$lecture2->url = 'https://www.youtube.com/watch?v=44VV6D9jAqE';
+$lecture2->url = 'https://www.youtube.com/embed/44VV6D9jAqE';
 $lecture2->name = 'COMO USAR O VIBRATO | Dica do Vinny';
 $lecture2->language = $language2;
 $lecture2->channel = $channel1;
@@ -119,7 +119,7 @@ R::store($lecture2);
 
 // lecture 3
 $lecture3 = R::dispense('lecture');
-$lecture3->url = 'https://www.youtube.com/watch?v=ecPzu9sTKbo';
+$lecture3->url = 'https://www.youtube.com/embed/ecPzu9sTKbo';
 $lecture3->name = '3 Ways of Playing F Chord - Guitar Lesson - Guitar for Beginners Stage 6 [BC-161]';
 $lecture3->language = $language1;
 $lecture3->channel = $channel2;
@@ -127,7 +127,7 @@ R::store($lecture3);
 
 // lecture 4
 $lecture4 = R::dispense('lecture');
-$lecture4->url = 'https://www.youtube.com/watch?v=Wp9X4XFIHR4';
+$lecture4->url = 'https://www.youtube.com/embed/Wp9X4XFIHR4';
 $lecture4->name = 'Get Clearer Sounding Chords with This String Muting Technique | Guitar for Beginners';
 $lecture4->language = $language1;
 $lecture4->channel = $channel2;
@@ -135,7 +135,7 @@ R::store($lecture4);
 
 // lecture 5
 $lecture5 = R::dispense('lecture');
-$lecture5->url = 'https://www.youtube.com/watch?v=AG0v-ZeBzJk';
+$lecture5->url = 'https://www.youtube.com/embed/AG0v-ZeBzJk';
 $lecture5->name = 'How to Play "Silent Night" on Guitar | Easy Chord Melody Lesson';
 $lecture5->language = $language1;
 $lecture5->channel = $channel3;
@@ -143,7 +143,7 @@ R::store($lecture5);
 
 // lecture 6
 $lecture6 = R::dispense('lecture');
-$lecture6->url = 'https://www.youtube.com/watch?v=40n2SUf9h2w';
+$lecture6->url = 'https://www.youtube.com/embed/40n2SUf9h2w';
 $lecture6->name = 'How to Play C7 on Guitar - Open Position';
 $lecture6->language = $language1;
 $lecture6->channel = $channel3;
