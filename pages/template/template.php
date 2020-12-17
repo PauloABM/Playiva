@@ -18,7 +18,13 @@ $title = isset($title) ? $title : 'Playiva';
         </style>
     </head>
     <body>
-        <?php include 'header.html'; ?>
+        <?php if( isset($_SESSION['email']) && !empty($_SESSION['email']) ){ ?>
+            <?php include 'header-logout.html'; ?> <!-- Header com botao de deslogar -->
+        <?php }else{ ?>
+            <?php include 'header.html'; ?>
+        <?php } ?>
+
+
         <?php if ($prefix) { include $prefix . '.content.php'; } else { echo 'No content available'; } ?>
         <?php include 'footer.html'; ?>
     </body>
