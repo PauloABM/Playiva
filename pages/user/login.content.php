@@ -43,8 +43,14 @@ if (isset($_POST['btn'])) {
                                 </span>
                             </div>
                         </div>
+                        <div class="has-text-centered">
+
+                        </div>
                         <div class="field">
-                            <button class="button is-success" name="btn"> Login </button>
+                            <button class="button is-success is-pulled-right" name="btn"> Login </button>
+                        </div>
+                        <div class="has-text-centered p_desce">
+                            <p><a href="reset-password.php">Esqueceu sua senha?</a> · <a href="cadastro.php">Cadastre-se</a></p>
                         </div>
                     </form>
                 </div>
