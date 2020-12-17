@@ -1,6 +1,6 @@
 <div class="container">
     <div class="block">
-        <div class="box" style="background-color: gray;">
+        <div class="box">
             <div class="tabs is-toggle is-fullwidth is-large">
             <ul>
                 <li id="tab1-learn" class="is-active" onclick="setTab1('learn')">
