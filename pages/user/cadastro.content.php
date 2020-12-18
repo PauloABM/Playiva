@@ -10,7 +10,7 @@ if (isset($_POST['btn'])) {
 <section class="section">
     <div class="columns">
 
-        <div class="column is-7 is-offset-2">
+        <div class="container is-centered is-max-desktop">
             <form action="" method="post">
                 <?php if (isset($signup) and $signup['status']) : ?>
                     <span style="text-align: center;color: green;margin: 2px auto;display: block;"><?php print $signup['message'] ?></span>
@@ -48,9 +48,9 @@ if (isset($_POST['btn'])) {
                         </span>
                     </div>
                 </div>
-                <div class="field is-grouped column is-pulled-right">
+                <div class="field is-grouped is-pulled-right">
                     <div class="control">
-                        <button class="button is-link" name="btn">Cadastrar</button>
+                        <button class="button is-primary" name="btn">Cadastrar</button>
                     </div>
                 </div>
             </form>

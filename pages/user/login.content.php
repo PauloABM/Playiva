@@ -12,9 +12,9 @@ if (isset($_POST['btn'])) {
         <div class="column is-8 is-offset-2 register">
             <div class="columns">
                 <div class="column left">
-                    <h1 class="title is-1">Super Cool Website</h1>
-                    <h2 class="subtitle colored is-4">Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ex deleniti aliquam tempora libero excepturi vero soluta odio optio sed.</p>
+                    <h1 class="title is-1">Playiva</h1>
+                    <h2 class="subtitle colored is-4">Aprenda a tocar de um jeito descomplicado.</h2>
+                    <p>Tenha acesso as melhores videoaulas de aprendizado. Filtre suas aulas por linguagens, canais e técnicas.</p>
                 </div>
                 <div class="column right">
                     <form action="" class="box" method="post">
@@ -47,7 +47,7 @@ if (isset($_POST['btn'])) {
 
                         </div>
                         <div class="field">
-                            <button class="button is-success is-pulled-right" name="btn"> Login </button>
+                            <button class="button is-primary is-pulled-right" name="btn"> Login </button>
                         </div>
                         <div class="has-text-centered p_desce">
                             <p><a href="reset-password.php">Esqueceu sua senha?</a> · <a href="cadastro.php">Cadastre-se</a></p>
