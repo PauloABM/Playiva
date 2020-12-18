@@ -10,7 +10,7 @@ $title = 'Playiva';
 
 R::setup(DB_STRING, DB_USER, DB_PASSWORD);
 
-function login(string $email, string $passwordHash){
+function login($email, $passwordHash){
     session_start();
     $failed = [
         'status' => false,

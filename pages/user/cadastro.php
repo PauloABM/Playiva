@@ -11,7 +11,7 @@ $title = 'Playiva - Cadastro';
 
 R::setup(DB_STRING, DB_USER, DB_PASSWORD);
 
-function signup(string $firstName, string $lastName,  string $email, string $passwordHash){
+function signup($firstName, $lastName, $email, $passwordHash){
     session_start();
     $failed = [
         'status' => false,

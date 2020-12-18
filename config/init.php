@@ -39,7 +39,7 @@ $user1 = R::dispense('user');
 $user1->firstName = 'Iarah';
 $user1->lastName = 'Almeida';
 $user1->email = 'iarahgda@gmail.com';
-$user1->passwordHash = 'fhasdf90dasfbp4i12hpfas';
+$user1->passwordHash = password_hash('fhasdf90dasfbp4i12hpfas', PASSWORD_DEFAULT);
 $user1->role = $adminRole;
 $user1_id = R::store($user1);
 
@@ -48,7 +48,7 @@ $user2 = R::dispense('user');
 $user2->firstName = 'Paulo';
 $user2->lastName = 'Borges';
 $user2->email = 'pauloabm@gmail.com';
-$user2->passwordHash = 'fasud9-fuasdhnç14fass';
+$user2->passwordHash = password_hash('fasud9-fuasdhnç14fass', PASSWORD_DEFAULT);
 $user2->role = $moderatorRole;
 $user2_id = R::store($user2);
 
@@ -57,7 +57,7 @@ $user3 = R::dispense('user');
 $user3->firstName = 'Nayara';
 $user3->lastName = 'Thaiza';
 $user3->email = 'nayaras@gmail.com';
-$user3->passwordHash = 'fyuasd09f7yuas9-h3412';
+$user3->passwordHash = password_hash('fyuasd09f7yuas9-h3412', PASSWORD_DEFAULT);
 $user3->role = $adminRole;
 $user3_id = R::store($user3);
 
@@ -66,7 +66,7 @@ $user4 = R::dispense('user');
 $user4->firstName = 'Hugo';
 $user4->lastName = 'Alkimim';
 $user4->email = 'hugoalkimim@gmail.com';
-$user4->passwordHash = 'fasdhhjpo1240-unasdd';
+$user4->passwordHash = password_hash('fasdhhjpo1240-unasdd', PASSWORD_DEFAULT);
 $user4->role = $userRole;
 $user4_id = R::store($user4);
 
