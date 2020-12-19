@@ -22,11 +22,11 @@ error_reporting(E_ALL);
     <div class="container is-centered is-max-desktop">
         <form action="" method="post">
             <h1 class="title">Admin</h1>
-            <a href="../user/crudInstrumento.content.php.php" font-size = >Instrumentos</a><br>
-            <a href="../user/crudLinguagem.content.php.php" font-size = >Linguagem</a><br>
-            <a href="../user/crudTecnica.content.php.php" font-size = >Tecnica</a><br>
-            <a href="../user/crudLicao.content.php.php" font-size = >Licao</a><br>
-            <a href="../user/crudCanal.content.php.php" font-size = >Canal</a><br>
+            <a href="../user/crudInstrumento.content.php" font-size = >Instrumentos</a><br>
+            <a href="../user/crudLinguagem.content.php" font-size = >Linguagem</a><br>
+            <a href="../user/crudTecnica.content.php" font-size = >Tecnica</a><br>
+            <a href="../user/crudLicao.content.php" font-size = >Licao</a><br>
+            <a href="../user/crudCanal.content.php" font-size = >Canal</a><br>
         </form>
     </div>
 </section>
