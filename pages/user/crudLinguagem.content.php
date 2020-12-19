@@ -22,7 +22,7 @@ if (isset($_GET['idAtualizar'])) {
 
         <div class="container is-centered is-max-desktop">
             <form action="" method="post">
-                <h1 class="title">Cadastro</h1>
+                <h1 class="title">Linguagem</h1>
                 <div class="field">
                     <label class="label">Nome</label>
                     <div class="control">
