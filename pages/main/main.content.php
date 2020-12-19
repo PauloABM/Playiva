@@ -154,69 +154,71 @@
                             <div class="column">
                                 <div class="field has-addons has-addons-right">
                                     <div class="control">
-                                        <input id="search-lecture" class="input" type="text" placeholder="Find a lecture">
+                                        <input id="search-lecture-input" class="input" type="text" placeholder="Find a lecture">
                                     </div>
                                     <div class="control">
-                                        <a class="button is-primary">
+                                        <a class="button is-primary" id="search-lecture-button">
                                             <span class="icon is-small">
                                                 <i class="fas fa-search"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <?php
-                                if ($lectures) {
-                                    foreach($lectures as $key => $value) {
-                                ?>
-                                <div class="video">
-                                    <div class="columns is-vcentered">
-                                        <div class="column">
-                                            <p class="mb-1 has-text-weight-semibold is-size-5"><?= $value['name'] ?></p>
-                                            <div class="field">
-                                                <p class="control">
-                                                    <iframe width="550" height="320"
-                                                        src="<?= $value['url'] ?>" title="<?= $value['name'] ?>">
-                                                    </iframe>
-                                                </p>
+                                <div id="videos">
+                                    <?php
+                                    if ($lectures) {
+                                        foreach($lectures as $key => $value) {
+                                    ?>
+                                    <div class="video">
+                                        <div class="columns is-vcentered">
+                                            <div class="column">
+                                                <p class="mb-1 has-text-weight-semibold is-size-5"><?= $value['name'] ?></p>
+                                                <div class="field">
+                                                    <p class="control">
+                                                        <iframe width="550" height="320"
+                                                            src="<?= $value['url'] ?>" title="<?= $value['name'] ?>">
+                                                        </iframe>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="column">
-                                            <p class="mb-3 has-text-weight-semibold is-size-5">Channel Name</p>
-                                            <p class="mb-1 has-text-weight-semibold is-size-5">Techniques</p>
-                                            <div class="tags">
-                                                <?php
-                                                if ($techniques) {
-                                                    foreach($techniques as $key => $value) {
-                                                ?>
-                                                <div class="tag is-rounded is-dark"><?= $value['name'] ?></div>
-                                                <?php
+                                            <div class="column">
+                                                <p class="mb-3 has-text-weight-semibold is-size-5">Channel Name</p>
+                                                <p class="mb-1 has-text-weight-semibold is-size-5">Techniques</p>
+                                                <div class="tags">
+                                                    <?php
+                                                    if ($techniques) {
+                                                        foreach($techniques as $key => $value) {
+                                                    ?>
+                                                    <div class="tag is-rounded is-dark"><?= $value['name'] ?></div>
+                                                    <?php
+                                                        }
+                                                    } else {
+                                                    ?>
+                                                    <div class="tag is-rounded is-danger">No techniques found :(</div>
+                                                    <?php
                                                     }
-                                                } else {
-                                                ?>
-                                                <div class="tag is-rounded is-danger">No techniques found :(</div>
-                                                <?php
-                                                }
-                                                ?>
-                                            </div>
-                                            <div class="control">
-                                                <a>
-                                                    <span class="has-text-weight-semibold is-size-6">Show more</span>
-                                                    <span class="icon is-small"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
-                                                </a>
+                                                    ?>
+                                                </div>
+                                                <div class="control">
+                                                    <a>
+                                                        <span class="has-text-weight-semibold is-size-6">Show more</span>
+                                                        <span class="icon is-small"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <?php
+                                    <?php
+                                        }
+                                    } else {
+                                    ?>
+                                    <div class="control">
+                                        No lectures found :(
+                                    </div>
+                                    <?php
                                     }
-                                } else {
-                                ?>
-                                <div class="control">
-                                    No lectures found :(
+                                    ?>
                                 </div>
-                                <?php
-                                }
-                                ?>
                             </div>
                         </div>
                     </div>
